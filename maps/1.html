@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="../js/Bing.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style type="text/css">
+        #map {
+            height: 100%;
+        }
+        #slide {
+            position: fixed;
+            bottom: 30px;
+            width: 100%;
+        }
+        #pointInfo {
+            position: fixed;
+            right: 0px;
+            top: 0px;
+            width: 300px;
+            z-index: 1000;
+        }
+    </style>
+    <script type="text/javascript">
+        WARPER_ID = '4657';
+    </script>
+</head>
+<title>Bombay Map</title>
+<body>
+    <div id="map"></div>
+    <div id="pointInfo">
+        <div id="pointTitle"></div>
+        <div id="pointDescription"></div>
+        <img id="pointImage" width="300" />
+    </div>
+    <input id="slide" type="range" min="0" max="1" step="0.0001" value="0.5">
+</body>
+<script type="text/javascript" src="../js/common.js"></script>
+</html>
