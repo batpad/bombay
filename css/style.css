@@ -72,6 +72,10 @@ b, strong {
     border-radius: 10px;
 }
 
+#linksList ul {
+    padding: 0;
+}
+
 #linksList li {
     list-style-type: none;
 }
@@ -83,8 +87,18 @@ b, strong {
     line-height: 1.6;
 }
 
+#linksList a svg {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 #linksList a:hover {
     color: #CB3838;
-    border-bottom: 1px solid #000;
     transition: all 0.1s ease-in;
+}
+
+#linksList a:hover svg {
+    fill: #CB3838;
 }
