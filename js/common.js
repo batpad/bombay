@@ -72,3 +72,18 @@ $(function() {
     }
 
 });
+
+$(function(){
+    //menu: off canvas
+    $('.nav-trigger').click(function(event){
+        event.stopPropagation();
+        $('.rightBox').toggleClass('nav-menu-open');
+    });
+
+    //close on window click
+    $(window).click(function(){
+        $('.rightBox').removeClass('nav-menu-open');
+    });
+
+
+});
