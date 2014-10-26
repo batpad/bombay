@@ -77,12 +77,8 @@ $(function(){
     //menu: off canvas
     $('.nav-trigger').click(function(event){
         event.stopPropagation();
+        $(this).toggleClass("nav-trigger-active");
         $('.rightBox').toggleClass('nav-menu-close');
-    });
-
-    //close on window click
-    $(window).click(function(){
-        $('.rightBox').removeClass('nav-menu-close');
     });
 
     //active menu link
