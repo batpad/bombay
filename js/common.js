@@ -1,6 +1,6 @@
 $(function() {
     var baseLaye
-    var map = L.map('map').setView([18.9524, 72.8327], 13);
+    var map = L.map('map').setView([18.9924, 72.9727], 11);
     var osmLayer = L.tileLayer('http://geo.klp.org.in/osm/{z}/{x}/{y}.png', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
         maxZoom: 18
@@ -52,7 +52,7 @@ $(function() {
 
         L.control.layers(baseMaps, overlayMaps, {
             collapsed: false,
-            position: 'topleft'
+            position: 'bottomleft'
         }).addTo(map);
     }
     function updateOpacity() {
