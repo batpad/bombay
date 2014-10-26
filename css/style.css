@@ -23,12 +23,11 @@ b, strong {
 
 #map {
     height: 100%;
-}
-#slide {
     position: fixed;
-    bottom: 30px;
-    width: 50%;
-    left: 25%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .nav-trigger {
@@ -56,14 +55,15 @@ b, strong {
     bottom: 0;
     height: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
     width: 350px;
-    right: -350px;
+    right: 0;
     transition: all 0.2s ease-in;
 }
 
-.nav-menu-open {
+.nav-menu-close {
   transition: all 0.2s ease-in;
-  right: 0;
+  right: -350px;
 }
 
 .textBox {
@@ -94,11 +94,69 @@ b, strong {
     vertical-align: middle;
 }
 
-#linksList a:hover {
+#linksList a:hover, #linksList .selected-menu {
     color: #CB3838;
     transition: all 0.1s ease-in;
 }
 
 #linksList a:hover svg {
     fill: #CB3838;
+}
+
+#slide {
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+    position: fixed;
+    bottom: 15px;
+    width: 50%;
+    left: 25%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #CB3838;
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+.rightBox::-webkit-scrollbar, .scrollbarDiv::-webkit-scrollbar {
+    width: 9px;
+    height: 16px;
+}
+ 
+.rightBox::-webkit-scrollbar-track, .scrollbarDiv::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background: white;
+}
+ 
+.rightBox::-webkit-scrollbar-thumb, .scrollbarDiv::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: rgba(203,56,56,0.9);
+}
+
+.rightBox::-webkit-scrollbar-thumb, .scrollbarDiv::-webkit-scrollbar-thumb {
+    border-radius: 10px;
 }

@@ -77,13 +77,18 @@ $(function(){
     //menu: off canvas
     $('.nav-trigger').click(function(event){
         event.stopPropagation();
-        $('.rightBox').toggleClass('nav-menu-open');
+        $('.rightBox').toggleClass('nav-menu-close');
     });
 
     //close on window click
     $(window).click(function(){
-        $('.rightBox').removeClass('nav-menu-open');
+        $('.rightBox').removeClass('nav-menu-close');
     });
 
-
+    //active menu link
+     $("#linksList a").each(function() {   
+           if (this.href == window.location.href) {
+               $(this).addClass("selected-menu");
+           }
+     });
 });
