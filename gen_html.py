@@ -1,5 +1,6 @@
 from jinja2 import Template
 from glob import glob
+import codecs
 
 def do():
     text_files = glob("texts/*.txt")
@@ -18,14 +19,15 @@ def do():
         links.append(data)
     for index, value in enumerate(text_files):
         this = links[index]
-
+        print value
         html = tpl.render({
             'id': this['id'],
             'title': this['title'],
-            'text': open(value).read(),
+            'text': codecs.open(value, encoding='utf-8').read(),
             'links': links
         })
+        print html
         outfile_path = "maps/%s.html" % this['id'] 
-        outfile = open(outfile_path, "w")
+        outfile = codecs.open(outfile_path, mode="w", encoding="utf-8")
         outfile.write(html)
         outfile.close()

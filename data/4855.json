@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name of island": "Mahim Island",
+        "old name": "Mayhem"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.83798217773438,
+          19.023336000027605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name of island": "Worli Island",
+        "old name": "Warli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.81686782836914,
+          19.006619676346205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name of island": "Bombay Island",
+        "old name": "Bom baim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.82270431518555,
+          18.951914727330074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name of island": "Old Woman's Island",
+        "old name": "Al-Omani"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.82776832580565,
+          18.917978902570862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name of island": "Colaba Island",
+        "old name": "Kolabhat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8148078918457,
+          18.905474492872504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name of island": "Mazagaon Island",
+        "old name": "Matsya Gram"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.83858299255371,
+          18.973425492476498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name of island": "Sion-Parel",
+        "old name": "Shiv-Parella"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.84467697143555,
+          19.003292440538416
+        ]
+      }
+    }
+  ]
+}
