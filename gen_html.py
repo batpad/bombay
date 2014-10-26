@@ -31,3 +31,6 @@ def do():
         outfile = codecs.open(outfile_path, mode="w", encoding="utf-8")
         outfile.write(html)
         outfile.close()
+
+if __name__== '__main__':
+    do()
