@@ -17,7 +17,7 @@ $(function() {
         .addTo(map).setOpacity(0.5);
     var geojsonLayer;
 
-    $('#slide').on('input', function(e) {
+    $('#rangeSlider').on('input', function(e) {
         updateOpacity();
     });
 
@@ -56,10 +56,10 @@ $(function() {
         }).addTo(map);
     }
     function updateOpacity() {
-        var value = $('#slide').val();
+        var value = $('#rangeSlider').val();
         map.eachLayer(function (layer) {
             console.log(layer);
-            if (layer._url.indexOf("mapwarper.net") !== -1) {
+            if (layer.hasOwnProperty('_url') && layer._url.indexOf("mapwarper.net") !== -1) {
                 layer.setOpacity(value);
             }
         })
