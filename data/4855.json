@@ -4,8 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name of island": "Mahim Island",
-        "old name": "Mayhem"
+        "tittle": "Mahim Island (Maijim)",
+        "description": "In ancient times, Mahim was known as Maijim, Mejambu or Mahikavati and was a densely wooded forest. Mahikavati was the kingdom built by the 12th century Hindu king Raja Bimba or Bhimdev who with his followers were probably the original settlers of Bombay. He built the famous Babulnath temple and a palace at Prabhadevi."
       },
       "geometry": {
         "type": "Point",
@@ -18,8 +18,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name of island": "Worli Island",
-        "old name": "Warli"
+        "tittle": "Worli Island (Warli)",
+        "description": "Worli was one of the original 7 islands of mumbai and had a strategic fort located at its edge. The Worli island was one end of what formed the Great Breach which was connected to the main Bombay isle by the Hornby Vellard which dammed the great breach. Landfill from the Worli hill was used in the reclamation of the race course area."
       },
       "geometry": {
         "type": "Point",
@@ -32,8 +32,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name of island": "Bombay Island",
-        "old name": "Bom baim"
+        "tittle": "Bombay Island (Bom baim)",
+        "description": "The isle of Bombay was one of the 7 islands that made up the city of Bombay as it was till the 18th century before a series of land reclamations formed them into a peninsula. Bombay Isle stretched from Malabar Hill in the West to Dongri in the East."
       },
       "geometry": {
         "type": "Point",
@@ -46,8 +46,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name of island": "Old Woman's Island",
-        "old name": "Al-Omani"
+        "tittle": "Old Woman's Island (Al-Omani)",
+        "description": "Old Woman's Island or Al-Omani as it was known as signified the Koli settlement that thrived on this isle and its fishing trawlers that cast their nets all the way to Oman. It is surmised that the name might have come to be from even the Omanis visiting these shores via the same route."
       },
       "geometry": {
         "type": "Point",
@@ -60,8 +60,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name of island": "Colaba Island",
-        "old name": "Kolabhat"
+        "tittle": "Colaba Island (Kolabhat)",
+        "description": "Colaba island (also known as Kolbhat, or 'place of Kolis') was one of the 7 islands that made up the hilly archipelago of Bombay. The area presently known as Colaba island initially consisted of two islands, Kolbhat (Colaba)and Al-Omani (Old woman's island)."
       },
       "geometry": {
         "type": "Point",
@@ -74,8 +74,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name of island": "Mazagaon Island",
-        "old name": "Matsya Gram"
+        "tittle": "Mazagaon Island (Matsya Gram)",
+        "description": "Mazagaon is supposed to be a corruption of the word 'my town' or 'maza-gaon' or even 'macchi-gaon', as in 'fish town'. It was one of the 7 islands that comprised Bombay till the 18th century."
       },
       "geometry": {
         "type": "Point",
@@ -88,8 +88,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name of island": "Sion-Parel",
-        "old name": "Shiv-Parella"
+        "tittle": "Sion-Parel (Shiv-Parella)",
+        "description": "Parel was one of the original seven islands of Bombay. It belonged to the 13th century kingdom of Raja Bhimdev. When the Portuguese conquered Bombay, they gave the authority of this area to the Jesuit priests. 'Parell' remained with the Jesuits until they were confiscated by the British, after the priests sided with the Sidis during their battle with the British in 1689. In the 1770s, William Hornsby, the Governor of Bombay, shifted his official residence to Parel. This area then became one of the poshest areas of the city."
       },
       "geometry": {
         "type": "Point",

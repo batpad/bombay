@@ -8,15 +8,21 @@ def do():
     tpl = Template(open("template.html").read())
     for t in text_files:
         filename = t.replace("texts/", "")
-        id = filename.split("_")[0]
-        title_arr = filename.replace(".txt", "").split("_")[1:]
+        order = filename.split("_")[0]
+        id = filename.split("_")[1]
+        title_arr = filename.replace(".txt", "").split("_")[2:]
         title = " ".join(title_arr)
         text = open(t).read()
         data = {
+            'order': int(order),
             'id': id,
             'title': title
         }
         links.append(data)
+    #import pdb; pdb.set_trace()
+    print links
+    links.sort(key=lambda x: x['order'])
+    print links
     for index, value in enumerate(text_files):
         this = links[index]
         print value
