@@ -198,3 +198,8 @@ input[type=range]:focus {
 .rightBox::-webkit-scrollbar-thumb, .scrollbarDiv::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
+
+.leaflet-popup-content p {
+    max-height: 200px;
+    overflow: auto;
+}
