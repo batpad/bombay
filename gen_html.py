@@ -16,27 +16,39 @@ def do():
         data = {
             'order': int(order),
             'id': id,
-            'title': title
+            'title': title,
+            'text': text
         }
         links.append(data)
     #import pdb; pdb.set_trace()
-    print links
     links.sort(key=lambda x: x['order'])
     print links
-    for index, value in enumerate(text_files):
-        this = links[index]
-        print value
+    for l in links:
         html = tpl.render({
-            'id': this['id'],
-            'title': this['title'],
-            'text': codecs.open(value, encoding='utf-8').read(),
+            'id': l['id'],
+            'title': l['title'],
+            'text': l['text'],
             'links': links
         })
-        print html
-        outfile_path = "maps/%s.html" % this['id'] 
+        outfile_path = "maps/%s.html" % l['id'] 
         outfile = codecs.open(outfile_path, mode="w", encoding="utf-8")
         outfile.write(html)
         outfile.close()
+
+    # for index, value in enumerate(text_files):
+    #     this = links[index]
+    #     print value
+    #     html = tpl.render({
+    #         'id': this['id'],
+    #         'title': this['title'],
+    #         'text': codecs.open(value, encoding='utf-8').read(),
+    #         'links': links
+    #     })
+    #     print html
+    #     outfile_path = "maps/%s.html" % this['id'] 
+    #     outfile = codecs.open(outfile_path, mode="w", encoding="utf-8")
+    #     outfile.write(html)
+    #     outfile.close()
 
 if __name__== '__main__':
     do()
